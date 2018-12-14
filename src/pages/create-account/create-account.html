@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Graciano Supermecado
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <h1 text-center>Cadastro de Clientes</h1>
+
+  <ion-list>
+    <ion-item>
+      <ion-label stacked>Nome</ion-label>
+      <ion-input type="text" name="nome" [(ngModel)]="model.nome"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>CPF</ion-label>
+      <ion-input type="text" name="cpf" [(ngModel)]="model.cpf"></ion-input>
+    </ion-item>
+  
+
+  <ion-item>
+    <ion-label stacked>Endereço</ion-label>
+    <ion-input type="text" name="endereco" [(ngModel)]="model.endereco"></ion-input>
+  </ion-item>
+
+
+
+    <ion-item>
+      <ion-label stacked>Email</ion-label>
+      <ion-input type="text" name="email" [(ngModel)]="model.email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Senha</ion-label>
+      <ion-input type="password" name="password" [(ngModel)]="model.password"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <button ion-button block (click)="createAccount()" color="primary">Cadastrar</button>
+
+</ion-content>
